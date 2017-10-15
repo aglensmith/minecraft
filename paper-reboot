@@ -1,0 +1,21 @@
+#!/bin/bash
+
+
+say_this()
+{
+    screen -S paper -p 0 -X stuff "$1^M"
+}
+
+say_this "say Server is rebooting in 1 minute"
+
+sleep 1m
+
+say_this "stop"
+
+sleep 5s
+
+sh /home/mcadmin/restart-server.sh
+
+
+
+ 

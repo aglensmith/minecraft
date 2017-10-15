@@ -1,0 +1,10 @@
+#!/bin/sh -e
+#
+#rc.local
+#
+echo "hello"
+cd /home/mcadmin/paper
+su - mcadmin -c "screen -dmS paper /home/mcadmin/paper/startup.sh" 
+echo "Goodbye"
+
+exit 0
